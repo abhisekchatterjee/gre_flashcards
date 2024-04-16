@@ -54,7 +54,7 @@ def flashcards(words_and_meanings):
     with col2:
         if st.button("Flip"):
             st.markdown("<h2 style='text-align: center; font-family: serif;'>{}</h2>".format(meaning), unsafe_allow_html=True)
-            if example.str.lower() == 'na':
+            if str(example).lower() == 'na':
                 st.markdown("<p style='text-align: center; font-family: serif;'>Example: Not Available</p>", unsafe_allow_html=True)
             else:
                 st.markdown("<p style='text-align: center; font-family: serif;'>Example: {}</p>".format(example), unsafe_allow_html=True)
